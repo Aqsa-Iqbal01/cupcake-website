@@ -1,0 +1,71 @@
+/* styles/navbar.css */
+
+/* Basic Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c2185b;
+    padding: 1rem;
+    color: white;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menu-icon {
+    font-size: 1.8rem;
+    display: none;
+    cursor: pointer;
+}
+
+/* Responsive Design for Tablets and Smaller Screens */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none; /* Hide links by default on smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #c2185b;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    /* Show nav-links when 'open' class is added */
+    .nav-links.open {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block; /* Show the hamburger icon */
+        color: white;
+    }
+
+    /* Make links full-width for better spacing on smaller screens */
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 1.2rem;
+        display: block;
+        text-align: center;
+    }
+}

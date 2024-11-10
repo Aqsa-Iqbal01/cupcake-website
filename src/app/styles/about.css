@@ -1,0 +1,72 @@
+.about-container {
+    display: flex;
+    align-items: center; /* Vertically aligns the image and text */
+    justify-content: space-between;
+    padding: 50px;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+}
+
+.about-image {
+    flex: 1;
+    max-width: 800px;
+}
+
+.about-image img {
+    width: 100%; /* Makes the image responsive */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.about-text {
+    flex: 2;
+    font-family: 'Poppins', sans-serif; /* Use a modern, clean font */
+    font-size: xx-large;
+    color: #333; /* Dark text for readability */
+    max-width: 980px;
+}
+
+.about-text h1 {
+    font-size: 2.9rem; /* Large heading for better emphasis */
+    margin-bottom: 20px;
+    color: #c2185b; /* Accent color to match your theme */
+}
+
+.about-text p {
+    line-height: 1.8; /* Improves readability */
+    margin-bottom: 70px;
+    font-size:20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stacks image and text vertically on smaller screens */
+        padding: 20px;
+    }
+
+    .about-text h1 {
+        font-size: 2rem; /* Adjust heading size for tablets */
+    }
+
+    .about-text p {
+        font-size: 1rem; /* Adjust paragraph size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text h1 {
+        font-size: 1.8rem; /* Adjust heading size for mobile */
+    }
+
+    .about-text p {
+        font-size: 0.9rem; /* Smaller paragraph text on mobile */
+    }
+}

@@ -1,0 +1,66 @@
+/* styles/menu.css */
+
+.menu-container {
+    
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #c2185b;
+    font-size: 1.4rem;
+}
+
+.menu-container {
+    margin-top: 0; /* Ensure there's no top margin */
+    padding-top: 0; /* Ensure there's no top padding */
+}
+
+h1 {
+    margin-top: 50px; /* Remove margin from the heading */
+}
+
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.menu-item {
+    flex: 1 1 calc(33% - 20px); /* Adjust for 3 items per row */
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.menu-item h2 {
+    font-size: 3rem;
+    color: #c2185b;
+}
+
+.menu-item p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    font-size:1.5rem;
+}
+
+.menu-item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Space between image and text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-item {
+        flex: 1 1 100%; /* Stack items vertically on smaller screens */
+    }
+}

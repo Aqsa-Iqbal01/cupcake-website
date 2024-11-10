@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h1 {
+    color: #ff69b4; /* Pink */
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}

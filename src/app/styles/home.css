@@ -1,0 +1,25 @@
+.heading{
+    font-family: 'poppins';
+    font-weight: 900;
+    margin-top: 20%;
+    margin-left: 10%;
+
+    font-weight: 600;
+    font-size: xx-large;
+    color:white;
+}
+.home{
+    background-image: url('/cupcake.jpg'); /* Correct path to your background image */
+    background-size:cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    height: 150vh; 
+
+   
+}
+.para{
+    font-weight: 700;
+    font-size: larger;
+    color: black;
+
+}
