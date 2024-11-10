@@ -1,5 +1,4 @@
 import Image from "next/image";
-import About from "./about/page";
 import Navbar from "./components/Navbar";
 import "@/app/styles/home.css"
 export default function Home() {

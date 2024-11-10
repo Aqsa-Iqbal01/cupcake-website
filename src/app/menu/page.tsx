@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image'; // Import Image from next/image
 import '../styles/menu.css'; // Import the corresponding CSS
 import Navbar from '../components/Navbar'; // Import Navbar
 
@@ -31,7 +32,6 @@ const Menu = () => {
             price: '$18',
             image: '/cupcake4.jpg',
         },
-       
     ];
 
     return (
@@ -41,7 +41,13 @@ const Menu = () => {
             <div className="menu-items">
                 {menuItems.map((item, index) => (
                     <div key={index} className="menu-item">
-                        <img src={item.image} alt={item.name} className="menu-item-image" />
+                        <Image
+                            src={item.image}       // Image path
+                            alt={item.name}        // Alt text for the image
+                            width={500}             // Image width (adjust as needed)
+                            height={300}            // Image height (adjust as needed)
+                            className="menu-item-image"
+                        />
                         <h2>{item.name}</h2>
                         <p>{item.description}</p>
                         <span className="price">{item.price}</span>
