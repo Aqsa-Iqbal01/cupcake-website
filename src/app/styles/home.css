@@ -1,25 +1,64 @@
-.heading{
-    font-family: 'poppins';
-    font-weight: 900;
-    margin-top: 20%;
-    margin-left: 10%;
-
+/* Heading Styles */
+.heading {
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: xx-large;
-    color:white;
+    margin-top: 20%; 
+    margin-left: 10%;
+    font-size: x-large;
+    color: rgb(189, 50, 73);
 }
-.home{
-    background-image: url('/cupcake.jpg'); /* Correct path to your background image */
-    background-size:cover; /* Ensure the image covers the entire area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    height: 150vh; 
 
-   
+/* Home Section (Background) */
+.home {
+    background-image: url('/cupcake.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    width: 100%; 
+    position: relative; 
 }
-.para{
-    font-weight: 700;
-    font-size: larger;
-    color: black;
 
+/* Paragraph Styling */
+.para {
+    font-weight: 500;
+    font-size: 30px; 
+    color: rgb(0, 0, 0);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .heading {
+        margin-top: 15%; 
+        margin-left: 5%;  
+        font-size: 1.5rem;
+    }
+
+    .para {
+        font-size: 1.2rem; 
+    }
+
+    .home {
+        background-size: cover; 
+        background-position: center; 
+        height: 100vh; 
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        margin-top: 10%; 
+        margin-left: 3%;  
+        font-size: 1.2rem; 
+    }
+
+    .para {
+        font-size: 1rem; 
+    }
+
+    .home {
+        background-size: cover;
+        background-position: center; 
+        height: 100vh; 
+    }
 }

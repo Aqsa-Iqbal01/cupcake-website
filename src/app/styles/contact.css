@@ -33,7 +33,7 @@ h1 {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 15px; /* Slightly reduce padding for smaller screens */
+    padding: 15px; 
     border: 1px solid #ccc;
     border-radius: 20px;
     font-size: 1rem;

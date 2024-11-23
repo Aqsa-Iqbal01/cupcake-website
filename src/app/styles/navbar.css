@@ -1,6 +1,11 @@
 /* styles/navbar.css */
 
 /* Basic Navbar Styling */
+body, html {
+    margin: 0; 
+    padding: 0; 
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -8,6 +13,7 @@
     background-color: #c2185b;
     padding: 1rem;
     color: white;
+    
 }
 
 .logo {
@@ -37,7 +43,7 @@
 /* Responsive Design for Tablets and Smaller Screens */
 @media (max-width: 1024px) {
     .nav-links {
-        display: none; /* Hide links by default on smaller screens */
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;

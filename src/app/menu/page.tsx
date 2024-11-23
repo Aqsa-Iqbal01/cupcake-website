@@ -30,7 +30,7 @@ const Menu = () => {
             name: 'Strawberry cupcake',
             description: 'Zesty lemon tart with a buttery crust.',
             price: '$18',
-            image: '/cupcake4.jpg',
+            image: '/cupcake4.jpg.webp',
         },
     ];
 
@@ -42,10 +42,10 @@ const Menu = () => {
                 {menuItems.map((item, index) => (
                     <div key={index} className="menu-item">
                         <Image
-                            src={item.image}       // Image path
-                            alt={item.name}        // Alt text for the image
-                            width={500}             // Image width (adjust as needed)
-                            height={300}            // Image height (adjust as needed)
+                            src={item.image}    
+                            alt={item.name}        
+                            width={500}            
+                            height={300}            
                             className="menu-item-image"
                         />
                         <h2>{item.name}</h2>

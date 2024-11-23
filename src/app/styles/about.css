@@ -1,6 +1,6 @@
 .about-container {
     display: flex;
-    align-items: center; /* Vertically aligns the image and text */
+    align-items: center; 
     justify-content: space-between;
     padding: 50px;
     gap: 20px;
@@ -15,28 +15,28 @@
 .about-image img {
     width: 100%; /* Makes the image responsive */
     height: auto;
-    border-radius: 10px; /* Rounded corners for a softer look */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .about-text {
     flex: 2;
-    font-family: 'Poppins', sans-serif; /* Use a modern, clean font */
+    font-family: 'Poppins', sans-serif; 
     font-size: xx-large;
-    color: #333; /* Dark text for readability */
+    color: #333;
     max-width: 980px;
 }
 
 .about-text h1 {
-    font-size: 2.9rem; /* Large heading for better emphasis */
+    font-size: 2.9rem; 
     margin-bottom: 20px;
-    color: #c2185b; /* Accent color to match your theme */
+    color: #c2185b; 
 }
 
 .about-text p {
-    line-height: 1.8; /* Improves readability */
-    margin-bottom: 70px;
-    font-size:20px;
+    line-height: 1.8; 
+    margin-bottom: 30px;
+    font-size:17px;
 }
 
 /* Responsive Design */
